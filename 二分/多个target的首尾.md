@@ -26,7 +26,7 @@
 输入：nums = [], target = 0
 输出：[-1,-1]
 
-
+```python
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         res1 = -1
@@ -54,6 +54,6 @@ class Solution:
             elif nums[mid] < target:
                 l = mid + 1
         return [res1,res2]
-
+```
 
     

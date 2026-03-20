@@ -24,7 +24,7 @@
 解释：letters 中没有一个字符在字典上大于 'z'，所以我们返回 letters[0]。
 
 核心思路就是每次大于target就记录下表，这样最后没有大于target时候记录的就是第一个比target大的
-
+```python
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
         l = 0
@@ -39,3 +39,4 @@ class Solution:
                 l = mid + 1
         return letters[res]
 
+```
